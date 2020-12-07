@@ -10,12 +10,12 @@ public class Emprestimo {
     GregorianCalendar devolucaoEfetiva;
     Object o;
     
-   public Emprestimo(String email,GregorianCalendar datasDeRetirada,GregorianCalendar devolucao, Object o){
-    this.email = email;
-    this.datasDeRetirada = datasDeRetirada;
-    this.devolucao = devolucao; 
-    this.o = o;   
-   }
+    public Emprestimo(String email,GregorianCalendar datasDeRetirada,GregorianCalendar devolucao, Object o){
+        this.email = email;
+        this.datasDeRetirada = datasDeRetirada;
+        this.devolucao = devolucao; 
+        this.o = o;   
+    }
 
     public String getEmail() {
         return email;
@@ -56,10 +56,5 @@ public class Emprestimo {
     public void setO(Object o) {
         this.o = o;
     }
-
-   
-     
-        
-
 }
 
