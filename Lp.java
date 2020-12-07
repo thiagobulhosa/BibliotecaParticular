@@ -10,18 +10,18 @@ public class Lp {
         
         GregorianCalendar datual = new GregorianCalendar();
 
-        ArrayList<Emprestimo> vetor = new ArrayList<Emprestimo>();
+        ArrayList<Emprestimo> emprestado = new ArrayList<Emprestimo>();
          
         Livro l = new Livro("O monge e o Executivo","James Hunter","Sextante",2004);
         Emprestimo e = new Emprestimo("amigao1@gmail.com",new GregorianCalendar(2014,01,03),new GregorianCalendar(2014,02,03),l);
-        vetor.add(e);
+        emprestado.add(e);
          
         Utensilio u = new Utensilio("frigideira","teflon");
         Emprestimo e3 = new Emprestimo("coleguinha2@gmail.com",new GregorianCalendar(2014,01,03),new GregorianCalendar(2014,02,03),u);
-        vetor.add(e3);
+        emprestado.add(e3);
          
         int cont=0;
-        for(Emprestimo e2 : vetor){
+        for(Emprestimo e2 : emprestado){
             System.out.println("emprestimo numero: " + ++cont);
             Object o = e2.getO();
             int i = (datual.compareTo(e2.getDevolucao()));
